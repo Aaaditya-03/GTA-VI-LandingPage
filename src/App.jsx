@@ -1,14 +1,16 @@
 import React from 'react'
+import Hero from './sections/Hero.jsx'
+import NavBar from './sections/NavBar.jsx'
+import gsap from 'gsap'
+import { ScrollTrigger , ScrollSmoother } from 'gsap/all'
 
+gsap.registerPlugin(ScrollTrigger , ScrollSmoother);
 const App = () => {
   return (
     <main>
-      <div>
-        <h1 className= 'text-3xl text-primary'>
-        Gta-VI-Landing Page Using Gsap!!
-        </h1>
-      </div>
-      </main>
+      <NavBar />
+      <Hero />
+    </main>
   )
 }
 
